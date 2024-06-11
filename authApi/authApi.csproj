@@ -1,0 +1,141 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessObjects\BusinessObjects.csproj" />
+    <ProjectReference Include="..\Data Access Layer\Data Access Layer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Uploads\Brands\0085d820-08b5-4f4d-8667-1619e49f6003.png" />
+    <None Include="wwwroot\Uploads\Brands\06251571-fd0b-42d0-9f1d-e0f5d0a12068.png" />
+    <None Include="wwwroot\Uploads\Brands\0669f686-8e0f-4e0d-ba8d-587cc6d58038.png" />
+    <None Include="wwwroot\Uploads\Brands\0af3308d-87d9-4cba-a74b-ff346b161bda.png" />
+    <None Include="wwwroot\Uploads\Brands\0fb6debd-eb22-4c5e-b964-619dab2304d9.png" />
+    <None Include="wwwroot\Uploads\Brands\30ab0563-7678-4c97-8f9e-34d045f93f92.png" />
+    <None Include="wwwroot\Uploads\Brands\39f1dce8-c642-441c-8128-dda15115257f.png" />
+    <None Include="wwwroot\Uploads\Brands\4631dcac-12bc-49e6-8e60-c35b979b9a84.png" />
+    <None Include="wwwroot\Uploads\Brands\4a701057-e0c5-40b4-94a8-35f049d1cbc5.jpg" />
+    <None Include="wwwroot\Uploads\Brands\4e74b9a0-e2cd-414a-856d-62a339cd7610.jpg" />
+    <None Include="wwwroot\Uploads\Brands\5225b1c9-bc49-4d58-9800-2883ea7f750a.svg" />
+    <None Include="wwwroot\Uploads\Brands\5959cf4e-c442-467b-b28f-d6b5723986ad.jpg" />
+    <None Include="wwwroot\Uploads\Brands\6949021c-6a11-49ae-84bd-72cf235a44e4.jpg" />
+    <None Include="wwwroot\Uploads\Brands\70d68fb3-348f-4998-8f78-8051a7df7391.png" />
+    <None Include="wwwroot\Uploads\Brands\8c5de182-6377-4eea-88eb-0b4472f68dd3.png" />
+    <None Include="wwwroot\Uploads\Brands\8da2dee7-a34b-49d9-b33e-3f6171924210.svg" />
+    <None Include="wwwroot\Uploads\Brands\9185f84c-678a-4957-a308-202112246503.png" />
+    <None Include="wwwroot\Uploads\Brands\95488dc1-1648-411e-8f73-c408040743be.jpg" />
+    <None Include="wwwroot\Uploads\Brands\95864935-bf6f-4dda-9d67-8d4f451f6fac.png" />
+    <None Include="wwwroot\Uploads\Brands\970566fe-edcd-488c-bd9b-4d2de32ccff3.png" />
+    <None Include="wwwroot\Uploads\Brands\ac9be130-fa60-48f7-ac78-d1e3c92383aa.jpg" />
+    <None Include="wwwroot\Uploads\Brands\af7a1b64-1a59-4555-ba9e-9ca723c68cf6.png" />
+    <None Include="wwwroot\Uploads\Brands\afaf41c7-04eb-46cb-b21d-8a77c94e9c59.png" />
+    <None Include="wwwroot\Uploads\Brands\audi.svg" />
+    <None Include="wwwroot\Uploads\Brands\b22a214a-42ab-4b77-8ce4-0f55480d211f.jpg" />
+    <None Include="wwwroot\Uploads\Brands\b28d9be7-e278-4382-9a1b-390aeb665012.jpg" />
+    <None Include="wwwroot\Uploads\Brands\b45258f0-b6ad-4cf2-8b7e-cf3e8eac1bf6.jpg" />
+    <None Include="wwwroot\Uploads\Brands\b7fabd36-fd80-4a36-bac3-4d1923a43e96.png" />
+    <None Include="wwwroot\Uploads\Brands\bd37ffad-be0c-4389-a2c3-2e90e8caa3b7.png" />
+    <None Include="wwwroot\Uploads\Brands\be122d5c-367a-4642-aee5-f1d1bfd7bf65.png" />
+    <None Include="wwwroot\Uploads\Brands\bmw.svg" />
+    <None Include="wwwroot\Uploads\Brands\byd-auto-logo-01.svg" />
+    <None Include="wwwroot\Uploads\Brands\byd-auto-logo.svg" />
+    <None Include="wwwroot\Uploads\Brands\c67f1ed7-cf58-49ac-a1e3-6fbb253e0dbb.png" />
+    <None Include="wwwroot\Uploads\Brands\chevrolet.svg" />
+    <None Include="wwwroot\Uploads\Brands\d117c4b0-4221-45cb-895f-39ff400e5f7c.jpg" />
+    <None Include="wwwroot\Uploads\Brands\db02134d-95ab-49ec-92d7-ecc60d635e4e.jpg" />
+    <None Include="wwwroot\Uploads\Brands\e72dc88e-2c65-4aa8-b05f-beac0f7f238e.svg" />
+    <None Include="wwwroot\Uploads\Brands\e82645a8-d34d-4b3b-8ab7-45bff5a8784f.png" />
+    <None Include="wwwroot\Uploads\Brands\f075dee8-7013-47ea-bb42-f1f4aec941c6.jpg" />
+    <None Include="wwwroot\Uploads\Brands\f125e77b-b6e4-47f0-ae7e-b6a4a530f865.svg" />
+    <None Include="wwwroot\Uploads\Brands\f9779b64-ab63-4c8f-8ec5-45b09c575c19.jpg" />
+    <None Include="wwwroot\Uploads\Brands\honda.svg" />
+    <None Include="wwwroot\Uploads\Brands\kia.svg" />
+    <None Include="wwwroot\Uploads\Brands\mercedes.svg" />
+    <None Include="wwwroot\Uploads\Brands\nissan.svg" />
+    <None Include="wwwroot\Uploads\Brands\tesla-9-01.svg" />
+    <None Include="wwwroot\Uploads\Brands\tesla-9.svg" />
+    <None Include="wwwroot\Uploads\Brands\toyota.svg" />
+    <None Include="wwwroot\Uploads\Brands\volkswagen.svg" />
+    <None Include="wwwroot\Uploads\Photoes\0b77a45e-94fd-43fc-8e60-a44231eae63a.png" />
+    <None Include="wwwroot\Uploads\Photoes\1b1db928-6422-45d0-9119-beedfdf0fef9.png" />
+    <None Include="wwwroot\Uploads\Photoes\1eb23c04-7690-4043-883c-9c44f691a7bb.png" />
+    <None Include="wwwroot\Uploads\Photoes\278a3ae4-56e2-49d2-8bda-51ae7cdf9f3c.png" />
+    <None Include="wwwroot\Uploads\Photoes\296c02a8-f8fc-4f3a-b8f7-6d33b538a5f7.png" />
+    <None Include="wwwroot\Uploads\Photoes\35874e90-0216-4307-8af6-6dbe712da474.png" />
+    <None Include="wwwroot\Uploads\Photoes\38a59a4b-bf59-43ba-9bc6-c22d49a5e3fc.png" />
+    <None Include="wwwroot\Uploads\Photoes\3f97b3a3-d774-45cf-9cdd-a05988978380.png" />
+    <None Include="wwwroot\Uploads\Photoes\42ce4009-c815-4971-af04-f1bda8bc798c.png" />
+    <None Include="wwwroot\Uploads\Photoes\45bb80e1-0ea7-4037-a734-e03c8dc254d7.png" />
+    <None Include="wwwroot\Uploads\Photoes\5a37656c-8fc3-479f-a14e-a3ae4af77073.jpeg" />
+    <None Include="wwwroot\Uploads\Photoes\67c5353d-08c8-4dae-b5ac-4583ee17ef88.png" />
+    <None Include="wwwroot\Uploads\Photoes\68740489-fc6f-48b8-ae11-95641a686166.png" />
+    <None Include="wwwroot\Uploads\Photoes\6a86154b-8c7a-4d7d-8e45-d62f38533680.png" />
+    <None Include="wwwroot\Uploads\Photoes\6b6743df-7487-4130-99a9-b1f2c554bd62.png" />
+    <None Include="wwwroot\Uploads\Photoes\6bb2900f-8cbc-47a1-9d69-aa389ff65f2c.png" />
+    <None Include="wwwroot\Uploads\Photoes\6bbdb27d-8396-4710-bf1b-350bb32cc2f9.png" />
+    <None Include="wwwroot\Uploads\Photoes\74e8f273-cf4a-4f9e-9a79-caa6ae930e47.png" />
+    <None Include="wwwroot\Uploads\Photoes\800c05e8-d079-49c0-b296-25d771758e33.png" />
+    <None Include="wwwroot\Uploads\Photoes\800c2bb8-1d0b-4d27-a9ee-da041b27df3f.png" />
+    <None Include="wwwroot\Uploads\Photoes\88708f8c-cdcc-4aa1-98b9-ada10bcea883.png" />
+    <None Include="wwwroot\Uploads\Photoes\8dece831-1e9a-482e-b014-9106dcac0d1a.png" />
+    <None Include="wwwroot\Uploads\Photoes\963278e2-0452-449c-a06a-00cbd986f11a.png" />
+    <None Include="wwwroot\Uploads\Photoes\9a791f35-455f-4f56-8969-55a0d597637a.png" />
+    <None Include="wwwroot\Uploads\Photoes\9bd7b268-8d2b-48c6-939e-323dfad39397.png" />
+    <None Include="wwwroot\Uploads\Photoes\9e9a2896-b611-4f4b-85f4-62a58e57bad9.png" />
+    <None Include="wwwroot\Uploads\Photoes\9f243446-c921-4339-ac4e-2399988e4eb0.png" />
+    <None Include="wwwroot\Uploads\Photoes\a3cdf3b9-860f-4291-a5bb-5f432144bbe6.png" />
+    <None Include="wwwroot\Uploads\Photoes\a7543202-5784-4dcb-9ec0-6e223df60bb0.png" />
+    <None Include="wwwroot\Uploads\Photoes\ab9e2222-e318-4e14-858f-902ffb4a240d.png" />
+    <None Include="wwwroot\Uploads\Photoes\b13b1200-9c74-4eef-b6fb-920d9d932137.png" />
+    <None Include="wwwroot\Uploads\Photoes\bd9d9742-f4f9-4385-9f14-f8911ba22743.png" />
+    <None Include="wwwroot\Uploads\Photoes\c1521cc4-05fd-45f4-a1a8-aedb95ebc3c3.png" />
+    <None Include="wwwroot\Uploads\Photoes\c723e22c-f8d7-4983-8672-f7835ea7d2a3.png" />
+    <None Include="wwwroot\Uploads\Photoes\cad71cc9-97a2-45b3-b54e-0e418fa5ae05.png" />
+    <None Include="wwwroot\Uploads\Photoes\ceba5570-587a-422a-a1d2-5234058459cf.png" />
+    <None Include="wwwroot\Uploads\Photoes\d06f0c33-3eb4-4ffb-8201-57f9d164cfac.png" />
+    <None Include="wwwroot\Uploads\Photoes\d81b69dc-5756-4731-b16c-eaafbdf99657.png" />
+    <None Include="wwwroot\Uploads\Photoes\dc2c84a6-031c-4ccb-a7f1-0c0b2e781932.png" />
+    <None Include="wwwroot\Uploads\Photoes\e19d1164-6058-4570-b74d-73e879a4b93a.png" />
+    <None Include="wwwroot\Uploads\Photoes\e59e9fc6-c1e9-4364-8e00-b3c04680e4da.png" />
+    <None Include="wwwroot\Uploads\Photoes\e6f9e847-61b6-472a-b4ac-32b97830f2ba.png" />
+    <None Include="wwwroot\Uploads\Photoes\e805f94d-d7b4-45d1-beb0-a887320ac633.png" />
+    <None Include="wwwroot\Uploads\Photoes\ea097d7c-9238-4d9f-a2ee-5f0fbb5d1f37.png" />
+    <None Include="wwwroot\Uploads\Photoes\eaeccf3f-009d-4483-9c5d-d67174293d90.png" />
+    <None Include="wwwroot\Uploads\Photoes\f3e3b26f-8d34-4a56-9388-a882804f0187.png" />
+    <None Include="wwwroot\Uploads\Photoes\id4.png" />
+    <None Include="wwwroot\Uploads\Photoes\id61.png" />
+    <None Include="wwwroot\Uploads\Photoes\id63.png" />
+    <None Include="wwwroot\Uploads\Photoes\id64.png" />
+    <None Include="wwwroot\Uploads\Photoes\id65.png" />
+    <None Include="wwwroot\Uploads\Photoes\id66.png" />
+    <None Include="wwwroot\Uploads\Photoes\id68.png" />
+    <None Include="wwwroot\Uploads\Photoes\id6icon.png" />
+    <None Include="wwwroot\Uploads\Photoes\id6_2.png" />
+    <None Include="wwwroot\Uploads\Photoes\id6_7.png" />
+    <None Include="wwwroot\Uploads\Photoes\modely1.png" />
+    <None Include="wwwroot\Uploads\Photoes\modely3.png" />
+    <None Include="wwwroot\Uploads\Photoes\modely4.png" />
+    <None Include="wwwroot\Uploads\Photoes\modely5.png" />
+    <None Include="wwwroot\Uploads\Photoes\modely6.png" />
+    <None Include="wwwroot\Uploads\Photoes\modely8.png" />
+    <None Include="wwwroot\Uploads\Photoes\modely9.png" />
+    <None Include="wwwroot\Uploads\Photoes\modelyicon.png" />
+    <None Include="wwwroot\Uploads\Photoes\modely_2.png" />
+    <None Include="wwwroot\Uploads\Photoes\modely_7.png" />
+    <None Include="wwwroot\Uploads\Photoes\songicon.png" />
+    <None Include="wwwroot\Uploads\Photoes\tesla.png" />
+    <None Include="wwwroot\Uploads\Photoes\tesla\modely10.png" />
+  </ItemGroup>
+
+</Project>

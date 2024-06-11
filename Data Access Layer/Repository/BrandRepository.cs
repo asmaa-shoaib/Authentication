@@ -74,7 +74,7 @@ namespace Data_Access_Layer.Repository
         public bool DeleteImage(string imageFileName)
         {
             var wwwPath = this._environment.WebRootPath;
-            var path = Path.Combine("D:\\Eleman\\new2\\Authentication\\auth\\", "Uploads\\Brands\\", imageFileName);
+            var path = Path.Combine("D:\\Eleman\\new2\\Authentication\\auth\\", "wwwroot\\Uploads\\Brands\\", imageFileName);
             if (System.IO.File.Exists(path))
             {
                 System.IO.File.Delete(path);

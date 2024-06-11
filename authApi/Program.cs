@@ -3,7 +3,7 @@ using Data_Access_Layer;
 using Microsoft.AspNetCore.Builder;
 using System.Configuration;
 using Microsoft.Extensions.Configuration;
-using Humanizer.Configuration;
+//using Humanizer.Configuration;
 using Microsoft.Extensions.Options;
 using BusinessObjects.Interfaces;
 using Data_Access_Layer.Repository;
@@ -22,10 +22,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddScoped<IGenericRepository<Car>, GenericRepository <Car>>();
+builder.Services.AddScoped<IGenericRepository<Car>, GenericRepository<Car>>();
 builder.Services.AddControllers().AddJsonOptions(x =>
                 x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+//builder.Services.AddAutoMapper(typeof(MappingProfiles));
 builder.Services.AddScoped<ICar, CarRepository>();
 builder.Services.AddScoped<IBrand, BrandRepository>();
 builder.Services.AddScoped<IBranch, BranchRepository>();
@@ -57,7 +58,7 @@ builder.Services.Configure<JWT>(builder.Configuration.GetSection("JWT"));
 builder.Services.AddDbContext<Data_Base>(opt =>
 opt.UseSqlServer(builder.Configuration.GetConnectionString("ConnStr")));
 
-builder.Services.AddIdentity<ApplicationUser,IdentityRole>().AddEntityFrameworkStores<Data_Base>();
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<Data_Base>();
 
 builder.Services.AddAuthentication(options =>
 {
@@ -73,10 +74,10 @@ builder.Services.AddAuthentication(options =>
     options.RequireHttpsMetadata = false;
     options.TokenValidationParameters = new TokenValidationParameters()
     {
-        ValidateIssuerSigningKey=true,
+        ValidateIssuerSigningKey = true,
         ValidateIssuer = false,
         ValidateAudience = false,
-        ValidateLifetime= true,
+        ValidateLifetime = true,
         ClockSkew = TimeSpan.Zero,
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:key"]))
     };
@@ -95,8 +96,9 @@ app.UseSwaggerUI();
 app.UseHttpsRedirection();
 app.UseStaticFiles(new StaticFileOptions
 {
-    FileProvider=new PhysicalFileProvider(
-        Path.Combine(builder.Environment.ContentRootPath,"Uploads")),RequestPath= "/Uploads"
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(builder.Environment.ContentRootPath, "wwwroot/Uploads")),
+    RequestPath = "/wwwroot/Uploads"
 });
 
 app.UseCors(myAllowSpecificOrigin);
